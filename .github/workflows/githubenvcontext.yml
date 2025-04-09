@@ -11,8 +11,9 @@ jobs:
   env: 
    MY_VAR: 'jobs'
   steps:
-     
     - name: "Display Info"
+      env: 
+        MY_VAR: 'steps'
       run: |
        echo 'Event name ${{github.event_name}}'
        echo 'Reference details ${{github.ref}}'
@@ -21,5 +22,4 @@ jobs:
        echo 'Run Id ${{github.run_id}}'
        echo 'Run number ${{github.run_number}}'
        echo '${{env.MY_VAR}}'
-       env: 
-        MY_VAR: 'steps'
+      
