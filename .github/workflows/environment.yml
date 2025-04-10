@@ -13,7 +13,7 @@ jobs:
   steps:
    - name : Environment Test
      run: |
-      echo 'Env var ${{vars.username}}'
+      echo 'Env var ${{vars.USERNAME}}'
       echo 'Env Secrets ${{secrets.API_KEY}}' 
   
     
