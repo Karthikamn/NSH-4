@@ -4,6 +4,7 @@ on:
  workflow_dispatch:
 env: 
  MY_VAR: 'workflow'
+ MY_USERNAME: ${{vars.username}}
 
 jobs:
  echo-github-context:
