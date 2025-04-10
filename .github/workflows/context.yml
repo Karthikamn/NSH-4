@@ -5,6 +5,7 @@ on:
 env: 
  MY_VAR: 'workflow'
  MY_USERNAME: ${{vars.username}}
+ API_KEY: ${{secrets.API_KEY}}
 
 jobs:
  echo-github-context:
@@ -24,4 +25,5 @@ jobs:
        echo 'Run number ${{github.run_number}}'
        echo '${{env.MY_VAR}}'
        echo '${{vars.username}}'
+       echo '${{env.API_KEY}}'
       
