@@ -14,3 +14,4 @@ jobs:
    - name: echo vars
      run: |
       echo "Env variables is: ${{vars.TARGET_VAR}}"
+      echo "Env secrets is: ${{secrets.API_KEY}}"
