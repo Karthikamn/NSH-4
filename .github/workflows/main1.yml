@@ -1,0 +1,15 @@
+name: Main workflow
+
+
+on:
+ push:
+  branches:
+   - master
+jobs:
+  use-reusable-workflow:
+   uses: ./.github/workflows/reusableflow.yml
+   with:
+    message: 'Hello Welcome to GH actions training'
+    
+   
+   
